@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: server-management
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dataflow
+    username: root
+    password: qwerty
+    driver-class-name: org.mariadb.jdbc.Driver
+  main:
+    allow-bean-definition-overriding: true

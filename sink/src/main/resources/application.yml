@@ -1,0 +1,25 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: sink-management
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/crm?autoReconnect=true&useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
+    username: root
+    password: qwerty
+    initialization-mode: never
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connection-test-query: SELECT 1
+      maximum-pool-size: 100
+      minimum-idle: 5
+      idle-timeout: 120000 #2 minutes idle timeout
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: none
+    database: MYSQL
+    generate-ddl: false
+    open-in-view: false
