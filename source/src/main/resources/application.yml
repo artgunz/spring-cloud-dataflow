@@ -5,7 +5,7 @@ spring:
   application:
     name: source-management
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:10.1.1.14}/crm?autoReconnect=true&useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
+    url: jdbc:mysql://${MYSQL_HOST:10.1.1.14}:3306/crm?autoReconnect=true&useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
     username: root
     password: qwerty
     initialization-mode: never
